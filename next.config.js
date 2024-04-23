@@ -8,6 +8,7 @@ const nextConfig = {
     locales: ["en", "fr", "nl"],
     defaultLocale: "en",
   },
+  skipTrailingSlashRedirect: true,
 };
 
 module.exports = nextConfig;
