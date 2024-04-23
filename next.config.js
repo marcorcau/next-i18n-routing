@@ -9,6 +9,14 @@ const nextConfig = {
     defaultLocale: "en",
   },
   skipTrailingSlashRedirect: true,
+  async rewrites () {
+    return [
+      {
+        source: "/random-rewrite-source",
+        destination: "/random-rewrite-destination",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
